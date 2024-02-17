@@ -27,5 +27,5 @@ SELECT
       --,[DueDate]
       --,[ShipDate]
   FROM [dbo].[FactInternetSales]
-  where left (OrderDateKey, 4) >= year(getdate()) -2 --to get dates from 2 years and up
+  where left (OrderDateKey, 4) >= year(getdate()) -5 --to get dates from 3 years and up
   order by OrderDateKey asc
